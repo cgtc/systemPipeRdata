@@ -1,4 +1,4 @@
-
+# Forked systemPipeRdata library. Parameter and configuration files are altered to reflect the actualy installed software versions of command line tools such as bowtie
 # systemPipeRdata: Workflow templates and sample data <img src="https://github.com/tgirke/systemPipeR/raw/gh-pages/images/systemPipeR.png" align="right" height="139" />
 
 [![platforms](http://www.bioconductor.org/images/shields/availability/all.svg)](http://www.bioconductor.org/packages/devel/data/experiment/html/systemPipeRdata.html#archives)
