@@ -10,7 +10,7 @@ hints:
   SoftwareRequirement:
     packages:
     - package: bowtie2
-      version: [ 2.3.4.3 ]
+      version: [ 2.4.2 ]
 
 ################################################################
 ##           baseCommand and arguments definitions            ##
