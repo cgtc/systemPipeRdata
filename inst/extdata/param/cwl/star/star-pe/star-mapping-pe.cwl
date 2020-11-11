@@ -10,7 +10,7 @@ hints:
   SoftwareRequirement:
     packages:
     - package: STAR
-      version: [ 2.5.3a ]
+      version: [ 2.7.6a ]
 
 ################################################################
 ##           baseCommand and arguments definitions            ##
