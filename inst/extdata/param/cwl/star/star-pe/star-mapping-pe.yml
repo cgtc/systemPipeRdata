@@ -36,8 +36,8 @@ results_path:
 thread: 4
 
 ModulesToLoad: 
-  module1: STAR/2.5.3a
-  module2: samtools/1.9
+  module1: STAR/2.7.6a
+  module2: samtools/1.11
 
 ##############################
 ## STAR required parameters ##
