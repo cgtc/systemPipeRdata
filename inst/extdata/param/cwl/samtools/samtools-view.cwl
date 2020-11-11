@@ -10,7 +10,7 @@ hints:
   SoftwareRequirement:
     packages:
     - package: samtools
-      #version: [ 1.9 ]
+      #version: [ 1.11 ]
 
 ################################################################
 ##           baseCommand and arguments definitions            ##
