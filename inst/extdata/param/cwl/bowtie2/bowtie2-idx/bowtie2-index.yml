@@ -4,9 +4,9 @@
 
 idx_basedir:
   class: Directory
-  path: ./data
+  path: /usr/share/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/
 
-idx_basename: tair10.fasta
+idx_basename: genome.fa
 
 results_path:
   class: Directory
