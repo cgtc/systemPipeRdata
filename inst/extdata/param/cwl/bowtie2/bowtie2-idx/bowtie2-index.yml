@@ -4,7 +4,7 @@
 
 idx_basedir:
   class: Directory
-  path: /usr/share/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta
+  path: ./data
 
 idx_basename: genome.fa
 
