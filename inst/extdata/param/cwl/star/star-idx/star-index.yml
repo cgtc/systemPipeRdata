@@ -26,4 +26,4 @@ results_path:
 thread: 4
 
 ModulesToLoad:
-  module1: STAR/2.7.6a
+  module1: star/2.7.6a
