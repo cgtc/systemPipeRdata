@@ -41,30 +41,26 @@ arguments:
 inputs:
   in:
     type: File
-    inputBinding:
-      position: 1
-  out:
-    label: "Out unmatched. Will get all the reads not part in ref "
-    type: string
-  outm:
-    label: "Out matched. Will get the reads matched to ref "
-    type: Directory
   ref:
-    label: "Directory to write output to"
-    type: Directory
+    label: phix.fa
+    type: File
   k:
-    label: "Directory to write output to"
-    type: Directory
+    label: 31
+    type: int
   hdist:
-    label: "Directory to write output to"
-    type: Directory
-  stats:
-    label: "Directory to write output to"
-    type: Directory
+    label: 1
+    type: int
 
 outputs:
-    gunzip_file:
-        type: stdout
+   out:
+    label: unmatched.fq
+    type: File
+  outm:
+    label: matched.fq
+    type: File
+  stats:
+    label: stats.txt
+    type: File
     
 stdout: $(inputs.results_path.basename)/$(inputs.SampleName).fastq
 
