@@ -55,10 +55,10 @@ outputs:
    out:
     label: catches reads that did not match any reference kmer
     type: File
-  outm:
+   outm:
     label: catches reads that matched a reference kmers
     type: File
-  stats:
+   stats:
     label: produces a report of which contaminant sequences were seen, and how many reads had them
     type: File
     
