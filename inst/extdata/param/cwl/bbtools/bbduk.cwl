@@ -42,25 +42,23 @@ inputs:
   in:
     type: File
   ref:
-    label: phix.fa
+    label: reference fasta file, e.g. phix.fa
     type: File
   k:
-    label: 31
+    label: This will remove all reads that have a k-mer match with the reference fasta file
     type: int
   hdist:
-    label: 1
+    label: allowed mismatch in kmer, e.g. if set to 1, would allow 1 mismatch in a kmer (e.g. 31mer)
     type: int
 
 outputs:
    out:
-    label: unmatched.fq
+    label: catches reads that did not match any reference kmer
     type: File
   outm:
-    label: matched.fq
+    label: catches reads that matched a reference kmers
     type: File
   stats:
-    label: stats.txt
+    label: produces a report of which contaminant sequences were seen, and how many reads had them
     type: File
     
-stdout: $(inputs.results_path.basename)/$(inputs.SampleName).fastq
-
