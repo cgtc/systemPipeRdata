@@ -5,13 +5,9 @@
 basedir:
   class: Directory
   path: ./data
+  
+SampleName: _SampleName_
 
-in: $(inputs.SampleName).fastq_trim.gz
-  class: File
-out: $(inputs.SampleName)_unmatched.fastq_trim.gz
-  class: File
-outm: $(inputs.SampleName)_matched.fastq_trim.gz
-  class: File
 ref: phix.fa
   class: File
 k: 31
