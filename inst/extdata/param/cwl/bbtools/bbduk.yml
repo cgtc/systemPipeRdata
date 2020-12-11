@@ -12,7 +12,6 @@ ref: phix.fa
   class: File
 k: 31
 hdist: 1
-stats: $(inputs.SampleName)_stats.txt
 
 ModulesToLoad:
   module1: bbmap/38_87
