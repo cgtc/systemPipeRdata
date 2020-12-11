@@ -6,24 +6,17 @@ basedir:
   class: Directory
   path: ./data
 
-runMode: genomeGenerate
-outFileNamePrefix: data/
-genomeFastaFiles: 
+in: $(inputs.SampleName).fastq_trim.gz
   class: File
-  path: data/genome.fa
-genomeSAindexNbases: 9
-sjdbGTFfile: 
+out: $(inputs.SampleName)_unmatched.fastq_trim.gz
   class: File
-  path: data/genes.gtf # recommend convert gff to gtf using ./gffread -T tair10.gff -o tair10.gtf
-sjdbGTFfeatureExon: exon
-sjdbGTFtagExonParentTranscript: transcript_id
-sjdbOverhang: 100
-
-results_path:
-  class: Directory
-  path: ./data
-
-thread: 4
+outm: $(inputs.SampleName)_matched.fastq_trim.gz
+  class: File
+ref: phix.fa
+  class: File
+k: 31
+hdist: 1
+stats: $(inputs.SampleName)_stats.txt
 
 ModulesToLoad:
-  module1: star/2.7.6a
+  module1: bbmap/38_87
