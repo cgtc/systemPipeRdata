@@ -64,10 +64,3 @@ outputs:
     
 stdout: $(inputs.results_path.basename)/$(inputs.SampleName).fastq
 
-
-###########
-## Notes ##
-###########
-
-## If the template its used in bash script with the "cwl-runner", run: 
-# "cwl-runner --outdir <path>/ gunzip.cwl gunzip.yml"
