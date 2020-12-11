@@ -9,7 +9,6 @@ basedir:
 SampleName: _SampleName_
 
 ref: phix.fa
-  class: File
 k: 31
 hdist: 1
 
