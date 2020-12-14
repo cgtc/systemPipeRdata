@@ -19,11 +19,11 @@ requirements:
       
 arguments:
   - prefix: in=
-    valueFrom: $(inputs.SampleName).fastq_trim.gz
+    valueFrom: $(inputs.basedir)/$(inputs.SampleName).fastq_trim.gz
   - prefix: out=
-    valueFrom: $(inputs.SampleName)_unmatched.fastq_trim.gz
+    valueFrom: $(inputs.basedir)/$(inputs.SampleName)_unmatched.fastq_trim.gz
   - prefix: outm=
-    valueFrom: $(inputs.SampleName)_matched.fastq_trim.gz
+    valueFrom: $(inputs.basedir)/$(inputs.SampleName)_matched.fastq_trim.gz
   - prefix: ref=
     valueFrom: $(inputs.ref)
   - prefix: k=
@@ -31,7 +31,7 @@ arguments:
   - prefix: hdist=
     valueFrom: $(inputs.hdist)
   - prefix: stats=
-    valueFrom: $(inputs.SampleName)_stats.txt
+    valueFrom: $(inputs.basedir)/$(inputs.SampleName)_stats.txt
  
     
 ################################################################
