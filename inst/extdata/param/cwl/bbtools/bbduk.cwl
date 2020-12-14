@@ -18,19 +18,19 @@ requirements:
       - $(inputs.basedir)
       
 arguments:
-  - prefix: in
+  - prefix: in=
     valueFrom: $(inputs.SampleName).fastq_trim.gz
-  - prefix: out
+  - prefix: out=
     valueFrom: $(inputs.SampleName)_unmatched.fastq_trim.gz
-  - prefix: outm
+  - prefix: outm=
     valueFrom: $(inputs.SampleName)_matched.fastq_trim.gz
-  - prefix: ref
+  - prefix: ref=
     valueFrom: $(inputs.ref)
-  - prefix: k
+  - prefix: k=
     valueFrom: $(inputs.k)
-  - prefix: hdist
+  - prefix: hdist=
     valueFrom: $(inputs.hdist)
-  - prefix: stats
+  - prefix: stats=
     valueFrom: $(inputs.SampleName)_stats.txt
  
     
